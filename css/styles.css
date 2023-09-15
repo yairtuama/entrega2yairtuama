@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Rowdex;
+    src: url(../fuentes/Rowdex.ttf);
+}
+
+@font-face {
+    font-family: PresidentNixon;
+    src: url(../fuentes/President\ Nixon.ttf);
+}
+
+@font-face {
+    font-family: Breaker;
+    src: url(../fuentes/Breaker\ Rockin\ Display.ttf);
+}
+
+body {background-image: url(../imagenes/imagendefondo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+color: #ffffff;}
+
+header {font-size: 150px;
+text-align: center;
+font-family: Rowdex;}
+
+.Menu{font-size: 50px;
+margin-bottom: 100px;
+text-align: center;
+}
+
+.tituloinicio{font-size: 40px;
+color: rgba(172, 85, 76, 0.993);
+background-color: #dad5d5cb;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+font-family: Breaker;
+}
+
+p{color: rgba(172, 85, 76, 0.993);
+font-size: 40px;
+font-family: PresidentNixon;
+text-decoration: underline;
+background-color: #dad5d5cb;}
+
+a{color: white;
+margin-left: 50px;
+}
+
+
+.motores{text-align: center;}
+.img1{margin-right: 200px;}
+#imgizquierda{margin-left: 200px;}
+
+.proyectos{text-align: center;}
+
+.prueba{display: flex;}
+.prueba p{font-size: 30px;
+height: 30%;
+margin-top: 300px;
+font-family: PresidentNixon;}
+
+.contenedor{
+border: 3px solid #f00;
+display: grid;
+padding: 10px;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3,200px);}
+
+.item{border: 5px dashed purple;}
+
+#grilla{display: grid;
+grid-template-rows: 120px 120px 120px 120px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: 
+    "servicios servicios publicidad"
+    "servicios servicios publicidad"
+    "servicios servicios publicidad"
+    "foot foot foot";}
+
+.border{
+grid-area: servicios;
+background-color: aqua;
+background-image: url(../imagenes/motor.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+/* height: 70%; */
+width: 60%;}
+
